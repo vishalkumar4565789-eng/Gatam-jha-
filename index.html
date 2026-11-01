@@ -87,6 +87,7 @@
             margin-bottom: 25px;
             box-shadow: 0 4px 15px rgba(241, 196, 15, 0.3);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
         }
 
         .cta-button:hover {
@@ -146,9 +147,14 @@
             padding-top: 15px;
         }
 
-        .footer span {
+        .footer a {
             color: #f1c40f;
             font-weight: 600;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -157,7 +163,6 @@
     <div class="container">
         <!-- Profile Picture -->
         <div class="profile-container">
-            <!-- Yahan apni image ka path ya URL daal sakte hain -->
             <img src="https://i.ibb.co/6cTnNz59/vx-KQu-Tj-QOVl73qgedt-G8n1l9g-Obu-PUvu-D2n5-I1y-Gh-Wf-Akj-CD73ah-Di0-Rb-Zj5zz1d-Ff-It-USH-Yyp-D0v9-F5zm.jpg" alt="Gautam Jha">
         </div>
 
@@ -166,8 +171,8 @@
         <div class="subtitle">NIFTY &bull; BANKNIFTY &bull; OPTIONS</div>
         <div class="description">Daily Intraday Trading Signals & Analysis</div>
 
-        <!-- Call to Action Button -->
-        <a href"https://t.me/+8TSdfmNYOoYwYjA1" target="_blank" class="cta-button">
+        <!-- Call to Action Button (JavaScript Forced Redirect Added) -->
+        <a href="https://t.me/+8TSdfmNYOoYwYjA1" target="_blank" class="cta-button" onclick="window.open(this.href, '_blank'); return false;">
             JOIN NOW - FREE ON TELEGRAM
         </a>
 
@@ -192,11 +197,12 @@
             <p>⚠ Market investments are subject to risk</p>
         </div>
 
-        <!-- Powered By -->
+        <!-- Powered By (AI Ad Agency Link) -->
         <div class="footer">
-            Powered by <span>AI ADS AGENCY</span>
+            Powered by <a href="https://t.me/YOUR_AI_ADS_AGENCY_LINK" target="_blank">AI ADS AGENCY</a>
         </div>
     </div>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
